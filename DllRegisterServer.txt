@@ -1,0 +1,5 @@
+clang, x64
+vswhere, msbuild, x86
+
+clang DllRegisterServer_x64.c -o DllRegisterServer_x64.exe -g -Wall
+clang DllRegisterServer_x86.c -o DllRegisterServer_x86.exe -g -Wall -m32

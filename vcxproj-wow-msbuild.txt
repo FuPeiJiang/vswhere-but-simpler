@@ -1,0 +1,10 @@
+C:\Program Files (x86)\Windows Kits\10\DesignTime\CommonConfiguration\Neutral\uCRT.props
+<UCRTContentRoot Condition="'$(UCRTContentRoot)' == ''">$(Registry:HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Kits\Installed Roots@KitsRoot10)</UCRTContentRoot>
+<UCRTContentRoot Condition="'$(UCRTContentRoot)' == ''">$(Registry:HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows Kits\Installed Roots@KitsRoot10)</UCRTContentRoot>
+
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v150\Microsoft.Cpp.WindowsSDK.targets
+<WindowsSDKInstalled Condition="Exists('$(WindowsSdkDir)\DesignTime\CommonConfiguration\Neutral\UAP\$(TargetPlatformVersion)\UAP.props')">true</WindowsSDKInstalled>
+
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v150\Microsoft.Cpp.WindowsSDK.props
+<WindowsSdkDir_10 Condition="'$(WindowsSdkDir_10)' == ''">$(Registry:HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft SDKs\Windows\v10.0@InstallationFolder)</WindowsSdkDir_10>
+<WindowsSdkDir_10 Condition="'$(WindowsSdkDir_10)' == ''">$(Registry:HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Microsoft SDKs\Windows\v10.0@InstallationFolder)</WindowsSdkDir_10>

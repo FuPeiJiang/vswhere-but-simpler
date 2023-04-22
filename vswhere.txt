@@ -1,0 +1,20 @@
+C:\ProgramData\Microsoft\VisualStudio\Packages\_Instances\
+
+literally reading from a json
+C:\ProgramData\Microsoft\VisualStudio\Packages\_Instances\6c0a1424\state.json
+
+
+for the json:
+junction.exe "C:\ProgramData\Microsoft\VisualStudio" "D:\ProgramData\Microsoft\VisualStudio"
+for it to be active (shown when not using `-all` arg of vswhere.exe)
+junction.exe "C:\Program Files\Microsoft Visual Studio" "D:\Program Files\Microsoft Visual Studio"
+
+sdk:
+junction.exe "C:\Program Files (x86)\Windows Kits" "D:\Program Files (x86)\Windows Kits"
+
+
+tests:
+vswhere
+msbuild
+clang
+
